@@ -1,0 +1,43 @@
+/* RESET  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* STYLE DU CONTAINER PRINCIPALE  */
+.container{
+    width: 100vw;
+    height:100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* STYLE POUR LE TEXTE */
+.container-text h1{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.container-text p{
+    font-size:18px;
+}
+
+.container-sign-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-pricing{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
