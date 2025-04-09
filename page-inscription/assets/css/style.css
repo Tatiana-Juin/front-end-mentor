@@ -23,21 +23,22 @@
 
 .container-text p{
     font-size:18px;
+    
 }
-
-.container-sign-up{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.info-pricing{
-    display: flex;
-    flex-direction: column;
-}
-
+/* POUR LE FORMULAIRE  */
 .form{
+    padding:15px;
+    /* border:1px solid red; */
+    background-color: white;
+}
+
+.form form{
     display: flex;
     flex-direction: column;
+    /* border:1px solid blue; */
+}
+
+.form form input{
+    width:330px;
 }
 
