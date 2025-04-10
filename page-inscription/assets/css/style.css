@@ -72,6 +72,17 @@
     border:none;
     color: white;
     cursor: pointer;
-    /* padding:20px; */
+    
+}
+
+/* DEBUT DU RESPONSIVE */
+@media screen and (max-width:1000px){
+    /* POUR FAIRE PASSER TOUS LES ELEMENTS EN COLONNES  */
+    .container{
+        flex-direction: column;
+        
+    }
+
+
 }
 
