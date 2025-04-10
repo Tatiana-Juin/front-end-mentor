@@ -20,7 +20,7 @@
     font-size: 40px;
     text-transform: capitalize;
 }
-
+/* STYLE DU TEXTE  */
 .container-text p{
     font-size:18px;
     
@@ -30,15 +30,20 @@
     padding:15px;
     /* border:1px solid red; */
     background-color: white;
+    width:500px;
+
 }
 
+/* STYLE  */
 .form form{
     display: flex;
     flex-direction: column;
     /* border:1px solid blue; */
 }
-
+/* style de l'input */
 .form form input{
-    width:330px;
+    width:450px;
+    height:40px;
+    margin-bottom:20px;
 }
 
