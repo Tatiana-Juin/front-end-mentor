@@ -25,13 +25,31 @@
     font-size:18px;
     
 }
+
+/* STYLE DE L'INFO DU PRIX  */
+.info-pricing{
+    padding:15px;
+    background-color: purple;
+  
+    border-radius: 15px;
+}
+
+/* STYLE DU TEXTE DE L'INFO PRIX  */
+.info-pricing p{
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+    font-size:18px;
+}
+
+
 /* POUR LE FORMULAIRE  */
 .form{
-    padding:15px;
+    padding:20px;
     /* border:1px solid red; */
     background-color: white;
     width:500px;
-
+    margin-top: 35px;
 }
 
 /* STYLE  */
@@ -40,6 +58,7 @@
     flex-direction: column;
     /* border:1px solid blue; */
 }
+
 /* style de l'input */
 .form form input{
     width:450px;
