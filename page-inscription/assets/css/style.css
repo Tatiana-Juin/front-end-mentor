@@ -86,6 +86,9 @@ body{
 
     .container{
         flex-direction: column;
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+       
     }
 
      .container-text h1{
@@ -96,7 +99,21 @@ body{
     
     .container-text p{
         margin: 0 20px 20px 20px;
+        
     }
+
+    .info-pricing{
+        width:100vw;
+        
+    }
+
+    .form{
+        width:100vw;
+    }
+
+    
+
+    
 }
 
 
