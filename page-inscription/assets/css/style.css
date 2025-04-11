@@ -79,8 +79,31 @@ body{
     
 }
 
-/* DEBUT DU RESPONSIVE */
-@media screen and (max-width:1000px){
+/* *****************DEBUT DU RESPONSIVE ****************** */
+
+/* POUR L'ECRAN DES PORTABLE  */
+@media screen and (max-width:510px){
+
+    .container{
+        flex-direction: column;
+    }
+
+     .container-text h1{
+        text-align: center;
+        margin: 20px 0 20px 0;
+    }
+
+    
+    .container-text p{
+        margin: 0 20px 20px 20px;
+    }
+}
+
+
+/* TABLETTE  */
+@media screen and (min-width:511px) and (max-width:1000px){
+    
+
     /* POUR FAIRE PASSER TOUS LES ELEMENTS EN COLONNES  */
     .container{
         flex-direction: column;
