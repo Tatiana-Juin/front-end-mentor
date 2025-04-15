@@ -24,17 +24,16 @@ body{
     font-size: 40px;
     text-transform: capitalize;
 }
+
 /* STYLE DU TEXTE  */
 .container-text p{
-    font-size:18px;
-    
+    font-size:18px; 
 }
 
 /* STYLE DE L'INFO DU PRIX  */
 .info-pricing{
     padding:15px;
     background-color: purple;
-  
     border-radius: 15px;
 }
 
@@ -50,27 +49,27 @@ body{
 /* POUR LE FORMULAIRE  */
 .form{
     padding:20px;
-    /* border:1px solid red; */
+    
     background-color: white;
     width:500px;
     margin-top: 35px;
 }
 
-/* STYLE  */
+/* STYLE DU FORMULAIRE   */
 .form form{
     display: flex;
     flex-direction: column;
-    /* border:1px solid blue; */
+   
 }
 
-/* style de l'input */
+/* STYLE DE L'INPUT */
 .form form input{
     width:450px;
     height:40px;
     margin-bottom:20px;
 }
 
-/* style pour le bouton inscription */
+/* STYLE POUR LE BOUTON INNSCRIPTION */
 .btn-form{
     background-color: green;
     border:none;
@@ -108,10 +107,13 @@ body{
     }
 
     .form{
-        width:100vw;
+        width:100%;
     }
 
-    
+    .form form input{
+        width:95%;
+    }
+
 
     
 }
