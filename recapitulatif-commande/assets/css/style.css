@@ -1,10 +1,48 @@
+/* RESET  */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* POUR LE BACKGROUND DE LA PAGE  */
+body{
+    background-color: #f4f2f2;
+}
+
+/* POUR CENTRER LA CARD */
+main{
+    display: flex;
+    /* flex-direction: column; */
+    width:100vw;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* LA CARD  */
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    /* border:1px solid blue; */
+    background-color: white;
+    /* Pour centrer le contenue  */
+    /* align-items: center; */
+}
+
+.div-text h1, .div-text p{
+    text-align: center;
+    margin-top:15px;
+}
+
+.div-text h1{
+    font-size: 28px;
+}
+
+/* POUR DIMENSIONNER L'IMAGE  */
 .div-img img{
-    width:200px;
-    height:200px;
+    width:30vw;
+    height:300px;
 }
