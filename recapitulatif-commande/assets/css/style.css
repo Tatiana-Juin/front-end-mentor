@@ -32,17 +32,37 @@ main{
     /* align-items: center; */
 }
 
-.div-text h1, .div-text p{
-    text-align: center;
-    margin-top:15px;
-}
 
-.div-text h1{
-    font-size: 28px;
-}
 
 /* POUR DIMENSIONNER L'IMAGE  */
 .div-img img{
     width:30vw;
     height:300px;
+}
+
+/* POUR LE TEXTE  AU DESSUS DU RECPAITULATIF DE LA COMMANDE  */
+.div-text h1, .div-text p{
+    text-align: center;
+    margin-top:12px;
+}
+
+/* TITRE  */
+.div-text h1{
+    font-size: 28px;
+}
+
+.div-text p {
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+/* **** RECAPITULATIF DU PLAN ACHETER */
+
+.div-pricing{
+    display: flex;
+    /* padding: 15px; */
+    background-color: aliceblue;
+    width:20vw;
+    margin-bottom: 15px;
+    
 }
