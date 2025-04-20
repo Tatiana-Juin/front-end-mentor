@@ -29,7 +29,7 @@ main{
     /* border:1px solid blue; */
     background-color: white;
     /* Pour centrer le contenue  */
-    /* align-items: center; */
+    align-items: center;
 }
 
 
@@ -57,12 +57,41 @@ main{
 }
 
 /* **** RECAPITULATIF DU PLAN ACHETER */
-
 .div-pricing{
     display: flex;
-    /* padding: 15px; */
+    padding: 15px;
     background-color: aliceblue;
-    width:20vw;
+    width:70%;
     margin-bottom: 15px;
+    justify-content: space-between;  
+}
+
+.text-pricing p{
+    font-size: 16px;
+}
+
+.text-pricing p:first-child{
+    margin-bottom: 3px;
+}
+
+.text-pricing-2{
+    color:gray;
+}
+
+.pricing-input input{
+    border:none;
+    cursor: pointer;
+    background-color: aliceblue;
+    padding:5px;
+    color:blue;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+/* POUR LES BOUTON EN BAS DE LA DIV  */
+.div-btn{
+    display: flex;
+    flex-direction: column;
     
 }
