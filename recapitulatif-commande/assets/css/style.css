@@ -25,7 +25,7 @@ main{
 .card{
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 25vw;
     /* border:1px solid blue; */
     background-color: white;
     /* Pour centrer le contenue  */
@@ -36,7 +36,7 @@ main{
 
 /* POUR DIMENSIONNER L'IMAGE  */
 .div-img img{
-    width:30vw;
+    width:25vw;
     height:300px;
 }
 
