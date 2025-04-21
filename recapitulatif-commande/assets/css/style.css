@@ -89,9 +89,33 @@ main{
     text-decoration: underline;
 }
 
-/* POUR LES BOUTON EN BAS DE LA DIV  */
+/* *****************POUR LES BOUTON EN BAS DE LA DIV  ***************/
 .div-btn{
     display: flex;
     flex-direction: column;
+    width:70%;
     
+}
+
+.btn-payment,.btn-cancel{
+    padding:10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    
+}
+
+.btn-payment{
+    background-color: blue;
+    color:white;
+    border:none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.btn-cancel{
+
+    background-color: white;
+    border:none;
+    color:gray;
+    font-size:16px;
 }
