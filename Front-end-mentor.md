@@ -4,9 +4,13 @@
 **lien du site** \
 https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1 
 
-## ORDER SUMMARY COMPONENT (newbie) (EN COURS )
+## ✅ ORDER SUMMARY COMPONENT (newbie) FINI
 **lien du site** \
 https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj 
+
+## AGE CALCULATOR (EN COURS )
+**lien du site**
+https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q
 
 ## NOTE D'UNE APPLICATION (newbie) 
 **Lien du site** \
@@ -30,9 +34,7 @@ https://www.frontendmentor.io/challenges/tech-book-club-landing-page-fZQidjHU73
 **lien du site** \
 https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj
 
-## AGE CALCULATOR 
-**lien du site**
-https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q
+
 
 ## NEW HOMEPAGE (junior)
 **lien du site** \
