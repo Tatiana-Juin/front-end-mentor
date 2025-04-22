@@ -156,4 +156,14 @@ main{
     .div-img img{
         width: 70vw;
     }
+
+    .div-text h1, .div-text p{
+        margin-top:20px;
+    }
+
+    .div-text p,.div-pricing,.btn-payment,.btn-cancel{
+        margin-bottom:20px;
+    }
+
+   
 }
