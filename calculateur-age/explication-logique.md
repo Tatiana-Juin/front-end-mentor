@@ -74,7 +74,10 @@
             - DONC 1 mois et 7 jours
             - RESULTAT : 25 ans 1 mois et 7 jours  
 
-
+## LES ERREURS A VERIFIER 
+- nombre jours : 1 et 31 
+- nombre mois 1 a 12 
+- le nombre ne doit avoir obligatoire 4 chiffre et commencer par 19 en plus l'annee ne doit pas etre supérieur a cette actuel -2 ans minimum 
 
 ## Récuperer le nombre de jours du mois dernier 
  - fonction date 
