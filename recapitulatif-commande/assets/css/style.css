@@ -25,7 +25,7 @@ main{
 .card{
     display: flex;
     flex-direction: column;
-    width: 25vw;
+    width: 28vw;
     /* border:1px solid blue; */
     background-color: white;
     /* Pour centrer le contenue  */
@@ -36,7 +36,7 @@ main{
 
 /* POUR DIMENSIONNER L'IMAGE  */
 .div-img img{
-    width:25vw;
+    width:28vw;
     height:300px;
 }
 
@@ -113,9 +113,24 @@ main{
 }
 
 .btn-cancel{
-
     background-color: white;
     border:none;
     color:gray;
     font-size:16px;
+}
+
+
+/************ RESPONSIVE ************** */
+
+/* TABLETTE ET GRAND ECRAN  */
+
+@media screen and (min-width: 800px) and (max-width: 1100px){
+    
+    .card{
+        width:50vw;
+    }
+
+    .div-img img{
+        width: 40vw;
+    }
 }
