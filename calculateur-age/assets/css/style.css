@@ -43,6 +43,13 @@ main{
     margin-top:10px;
 }
 
+.btn{
+    padding:8px;
+    border: none;
+    border-radius:15px;
+    cursor: pointer;
+}
+
 .div-reponse{
     margin-top: 15px;
     width: 20vw;
