@@ -7,6 +7,39 @@
     <title>Calculateur d'age</title>
 </head>
 <body>
+
+    <main>
+        <h1>Calculateur d'age </h1>
+
+        <div class="div-input">
+            <!-- Au cas ou il est des erreurs nb   -->
+            <p class="erreur">Erreur </p>
+
+            <form action="" method="post">
+                <label for="jour"> Jours </label>
+                <input type="number" name="jour" id="jour" class="jour">
+
+                <label for="mois"> mois</label>
+                <input type="number" name="mois" id="mois" class="mois">
+
+                <label for="annee"> Annee</label>
+                <input type="number" name="annee" id="annee" class="annee">
+
+                <input type="submit" value="Envoyer" class="btn">
+
+                
+            </form>
+
+        </div>
+
+        <div class="div-reponse">
+            <p class="text-annee">  </p>
+            <p class="text-mois">  </p>
+            <p class="text-jour">  </p>
+
+        </div>
+
+    </main>
     
     <script src="assets/js/script.js"></script>
 </body>
