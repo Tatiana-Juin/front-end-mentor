@@ -122,7 +122,7 @@ main{
 
 /************ RESPONSIVE ************** */
 
-/* TABLETTE ET GRAND ECRAN  */
+/*  GRAND ECRAN  */
 
 @media screen and (min-width: 800px) and (max-width: 1100px){
     
@@ -132,5 +132,28 @@ main{
 
     .div-img img{
         width: 40vw;
+    }
+}
+
+/* TABLETTE */
+@media screen and (min-width:600px) and (max-width:799px){
+
+    .card{
+        width:70vw;
+    }
+
+    .div-img img{
+        width: 50vw;
+    }
+}
+
+/* PETIT SMARTPHONE */
+@media screen and (max-width: 599px){
+    .card{
+        width:90vw;
+    }
+
+    .div-img img{
+        width: 70vw;
     }
 }
