@@ -5,6 +5,33 @@ let moisInput = document.querySelector(".mois");
 let anneeInput = document.querySelector(".annee");
 let btn = document.querySelector(".btn");
 
+// FONCTION POUR LES ERREUR 
+function funcErreur(jour,mois,annee,dateActuelle){
+
+    // TOUS LES CHAMPS NE SONT PAS REMPLI 
+    if(jour.trim() ==="" || mois.trim()==="" || annee.trim() ===""){
+       return erreur.innerHTML="Il faut remplir tous les champs";
+        
+        
+    }
+    else{
+        // SI LE NB DE JOURS EST UNE ERREUR 
+        if(jour < 1 || jour > 31  ){
+            // erreur.innerHTML="";
+          return  erreur.innerHTML="Le nombre du jours doit etre compris entre 1 et 31";
+
+        }else{
+
+            // NB DE MOIS EST UNE ERREUR 
+            if(mois< 1 || mois > 12){
+              return  erreur.innerHTML="Le nombre du mois doit etre compris entre 1 et 12"; 
+            }
+
+
+        }
+    }
+}
+
 // FONCTION SI L'ANIV A EU LIEU 
 
 //  FONCTION SI L'ANIV A EU LIEU 
@@ -16,12 +43,18 @@ btn.addEventListener("click", (e) =>{
     let mois = moisInput.value;
     let annee = anneeInput.value;
     
-    if(jour.trim() ==="" || mois.trim()==="" || annee.trim() ===""){
-        erreur.innerHTML="Il faut remplir tous les champs";
-    }
+    let dateActuelle = new Date(); 
+    // recupere index 
+    let moisIndex= dateActuelle.getMonth() ;
+    let nomDesMois = ['janvier','fevrier','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','decembre'];
+    // Pour afficher en lettre de  nom du mois actuelle 
+    let nomDuMoisActuelle = nomDesMois[moisIndex];
 
-    // console.log(` jour : ${jour} mois: ${mois} annee: ${annee}`);
+    console.log(moisIndex + 1);
+
+    funcErreur(jour,mois,annee,dateActuelle);
     
-
+   
 
 })
+
