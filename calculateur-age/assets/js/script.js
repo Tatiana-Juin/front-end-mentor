@@ -8,6 +8,11 @@ let btn = document.querySelector(".btn");
 // FONCTION POUR LES ERREUR 
 function funcErreur(jour,mois,annee,anneeActuelle){
 
+    // lA DATE DE L'ANNIVERSAIRE DOIT ETRE superieur a 2 ans 
+    let nouvelleAnnee = anneeActuelle -2;
+    // console.log(nouvelleAnnee);
+ 
+
     // TOUS LES CHAMPS NE SONT PAS REMPLI 
     if(jour.trim() ==="" || mois.trim()==="" || annee.trim() ===""){
        return erreur.innerHTML="Il faut remplir tous les champs";
@@ -26,6 +31,10 @@ function funcErreur(jour,mois,annee,anneeActuelle){
             if(mois< 1 || mois > 12){
               return  erreur.innerHTML="Le nombre du mois doit etre compris entre 1 et 12"; 
             }
+            // else{
+                
+            //     if(dateActuelle === date || )
+            // }
 
 
         }
@@ -41,7 +50,7 @@ btn.addEventListener("click", (e) =>{
 
     let jour = jourInput.value;
     let mois = moisInput.value;
-    let annee = anneeInput.value;µ
+    let annee = anneeInput.value;
 
     // INITIALISATION DE LA DATE 
     let dateActuelle = new Date(); 
@@ -51,12 +60,14 @@ btn.addEventListener("click", (e) =>{
     let nomDesMois = ['janvier','fevrier','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','decembre'];
     // Pour afficher en lettre de  nom du mois actuelle 
     let nomDuMoisActuelle = nomDesMois[moisIndex];
-    
+
     // POUR RECUPERER L'ANNEE ACTUELLE 
     let anneeActuelle = dateActuelle.getFullYear();
 
     console.log(moisIndex + 1);
     console.log(anneeActuelle);
+
+   
 
     funcErreur(jour,mois,annee,anneeActuelle);
     
