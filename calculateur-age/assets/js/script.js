@@ -6,7 +6,7 @@ let anneeInput = document.querySelector(".annee");
 let btn = document.querySelector(".btn");
 
 // FONCTION POUR LES ERREUR 
-function funcErreur(jour,mois,annee,dateActuelle){
+function funcErreur(jour,mois,annee,anneeActuelle){
 
     // TOUS LES CHAMPS NE SONT PAS REMPLI 
     if(jour.trim() ==="" || mois.trim()==="" || annee.trim() ===""){
@@ -41,18 +41,24 @@ btn.addEventListener("click", (e) =>{
 
     let jour = jourInput.value;
     let mois = moisInput.value;
-    let annee = anneeInput.value;
-    
+    let annee = anneeInput.value;µ
+
+    // INITIALISATION DE LA DATE 
     let dateActuelle = new Date(); 
-    // recupere index 
+  
+    // recupere index du mois 
     let moisIndex= dateActuelle.getMonth() ;
     let nomDesMois = ['janvier','fevrier','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','decembre'];
     // Pour afficher en lettre de  nom du mois actuelle 
     let nomDuMoisActuelle = nomDesMois[moisIndex];
+    
+    // POUR RECUPERER L'ANNEE ACTUELLE 
+    let anneeActuelle = dateActuelle.getFullYear();
 
     console.log(moisIndex + 1);
+    console.log(anneeActuelle);
 
-    funcErreur(jour,mois,annee,dateActuelle);
+    funcErreur(jour,mois,annee,anneeActuelle);
     
    
 
