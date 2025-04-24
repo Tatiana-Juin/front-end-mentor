@@ -66,7 +66,7 @@ btn.addEventListener("click", (e) =>{
    
     
     // recupere index du mois 
-    let moisIndex= dateActuelle.getMonth() ;
+    let moisIndex= dateActuelle.getMonth() +1;
     let nomDesMois = ['janvier','fevrier','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','decembre'];
     // Pour afficher en lettre de  nom du mois actuelle 
     let nomDuMoisActuelle = nomDesMois[moisIndex];
@@ -74,13 +74,19 @@ btn.addEventListener("click", (e) =>{
     // POUR RECUPERER L'ANNEE ACTUELLE 
     let anneeActuelle = dateActuelle.getFullYear();
 
-    // console.log(moisIndex + 1);
-    // console.log(anneeActuelle);
-    // console.log(`jour actuuelle :  ${jourActuelle} ${moisIndex}  ${anneeActuelle} `);
+    // console.log(` Le jour saisie est : ${jour} ${mois} ${annee} `);
+    // console.log(` Date actuelle : ${jourActuelle} ${moisIndex} ${anneeActuelle} `);
 
     funcErreur(jour,mois,annee,anneeActuelle);
+
+    if(mois > moisIndex){
+        // console.log("Annive na pas eu lieu");
+        let nbAnnee = anneeActuelle - annee - 1;
+        // console.log(nbAnnee);
+        // let nbMoisComparAnniv = 
+    }
     
-   
+
 
 })
 
