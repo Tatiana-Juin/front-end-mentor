@@ -9,7 +9,7 @@ let btn = document.querySelector(".btn");
 function funcErreur(jour,mois,annee,anneeActuelle){
 
     // lA DATE DE L'ANNIVERSAIRE DOIT ETRE superieur a 2 ans 
-    let nouvelleAnnee = anneeActuelle -2;
+    let nouvelleAnnee = anneeActuelle -1;
     // console.log(nouvelleAnnee);
  
 
@@ -31,10 +31,15 @@ function funcErreur(jour,mois,annee,anneeActuelle){
             if(mois< 1 || mois > 12){
               return  erreur.innerHTML="Le nombre du mois doit etre compris entre 1 et 12"; 
             }
-            // else{
-                
-            //     if(dateActuelle === date || )
-            // }
+            else{
+                // SI L'ANNEE COMPORTE UNE ERREUR 
+                if(annee < 1915 || annee > nouvelleAnnee){
+                    return  erreur.innerHTML="l'année est incorrecte "; 
+                }else{
+                    // SI TOUTES LES VERIFICATION SONT BONNE CELA ENLEVE LE TEXTE D'ERREUUR 
+                    return  erreur.innerHTML=" "; 
+                }
+            }
 
 
         }
@@ -64,10 +69,8 @@ btn.addEventListener("click", (e) =>{
     // POUR RECUPERER L'ANNEE ACTUELLE 
     let anneeActuelle = dateActuelle.getFullYear();
 
-    console.log(moisIndex + 1);
-    console.log(anneeActuelle);
-
-   
+    // console.log(moisIndex + 1);
+    // console.log(anneeActuelle);
 
     funcErreur(jour,mois,annee,anneeActuelle);
     
