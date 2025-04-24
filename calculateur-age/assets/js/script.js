@@ -53,13 +53,18 @@ function funcErreur(jour,mois,annee,anneeActuelle){
 btn.addEventListener("click", (e) =>{
     e.preventDefault();
 
+    // RECUPERE LES INFORMATION SAISIE 
     let jour = jourInput.value;
     let mois = moisInput.value;
     let annee = anneeInput.value;
 
     // INITIALISATION DE LA DATE 
     let dateActuelle = new Date(); 
-  
+
+    // RECUPERE LE JOUR ACTUELLE 
+    let jourActuelle = dateActuelle.getDate();
+   
+    
     // recupere index du mois 
     let moisIndex= dateActuelle.getMonth() ;
     let nomDesMois = ['janvier','fevrier','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','decembre'];
@@ -71,6 +76,7 @@ btn.addEventListener("click", (e) =>{
 
     // console.log(moisIndex + 1);
     // console.log(anneeActuelle);
+    // console.log(`jour actuuelle :  ${jourActuelle} ${moisIndex}  ${anneeActuelle} `);
 
     funcErreur(jour,mois,annee,anneeActuelle);
     
