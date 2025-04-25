@@ -83,8 +83,23 @@ btn.addEventListener("click", (e) =>{
         // console.log("Annive na pas eu lieu");
         let nbAnnee = anneeActuelle - annee - 1;
         // console.log(nbAnnee);
-        // let nbMoisComparAnniv = 
+        // Pour recuperer la date entiere en chaine de caractere
+        let dateEntiereActuel = jourActuelle +""+ moisIndex +""+ anneeActuelle;
+        
+        // console.log(typeof dateEntiereActuel);
+        // EN CAS OU ON DOIT LA CONVERTIR EN NB 
+        // let nbDateEntierActuel = Number(dateEntiereActuel);
+        // console.log(nbDateEntierActuel);
+
+        // RECUPERER LE DERNIER ANNVIERSAIRE 
+        let dernierAniv = jour + ""+ mois + "" + anneeActuelle -1;
+        console.log(dernierAniv);
+        
+
+    
     }
+
+
     
 
 
