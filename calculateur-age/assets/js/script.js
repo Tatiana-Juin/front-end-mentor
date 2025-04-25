@@ -94,7 +94,24 @@ btn.addEventListener("click", (e) =>{
         // RECUPERER LE DERNIER ANNVIERSAIRE 
         let dernierAniv = jour + ""+ mois + "" + anneeActuelle -1;
         console.log(dernierAniv);
-        
+        let nbMois = 1 ;
+     
+
+        // if(jourActuelle != 1){
+            
+        //     while(mois != moisActuelle -1 ){
+        //         nbMois = nbMois + 1;
+        //     }
+        // }
+        let moisDebut = parseInt(mois);
+        for(let m = moisDebut; m< moisIndex; m++ ){
+            console.log("m au début de l'itération :", m);
+            nbMois ++;
+            console.log("NbMois a la fin de l'itération :", nbMois);
+        }
+        nbMois = nbMois + (nbAnnee * 12);
+        console.log(nbMois);
+
 
     
     }
